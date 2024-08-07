@@ -18,7 +18,7 @@ if [[ "$(id -u)" -ne 0 ]]; then
     exit 1
 fi
 }
-
+chmod +x insta.sh
 dependencies() {
 
 command -v openssl > /dev/null 2>&1 || { echo >&2 "❌ I require openssl but it's not installed. Aborting."; exit 1; }
